@@ -1,0 +1,723 @@
+.mil-sidebar { z-index: auto; }
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <title>AlSibir – Персональное портфолио и резюме</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="author" content="bslthemes" />
+
+    <!-- grid css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <!-- okai css -->
+    <link rel="stylesheet" href="css/style-light.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+<style>
+  .pdf-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 999999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
+  }
+  .pdf-modal.show {
+    display: flex;
+  }
+  .pdf-content {
+    background: #fff;
+    max-width: 1200px;
+    width: 95vw;
+    height: 90vh;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .pdf-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+  .pdf-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: transparent;
+    color: #444;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.2s ease;
+  }
+  .pdf-close:hover {
+    color: #000;
+  }
+  @media (max-width: 768px) {
+    .pdf-content {
+      width: 100vw;
+      height: 95vh;
+      border-radius: 0;
+    }
+  }
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+body.modal-open .mil-sidebar { display: none !important; }
+</style>
+
+
+<script src="https://cdn.counter.dev/script.js" data-id="8308e23b-f04e-4373-97f3-31b0da94742c" data-utcoffset="3"></script>
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div id="smooth-wrapper" class="mil-page-wrapper">
+
+        <!-- preloader -->
+        <div class="mil-preloader">
+            <div class="mil-h1 mil-fs24">Загрузка<span class="mil-accent">...</span></div>
+            <div class="mil-curtain"></div>
+            <div class="mil-load"></div>
+        </div>
+        <!-- preloader end -->
+
+        <!-- cursor -->
+        <div class="mil-cursor-follower"></div>
+        <!-- cursor end -->
+
+        <!-- scroll progress -->
+        <div class="mil-progress-track">
+            <div class="mil-progress"></div>
+        </div>
+        <!-- scroll progress end -->
+
+        <!-- top panel -->
+        <div class="mil-top-panel">
+            <a href="home-1.html" class="mil-logo mil-c-gone">A.</a>
+            <div class="mil-menu-btn"><span></span></div>
+        </div>
+        <!-- top panel end -->
+
+        <!-- sidebar -->
+        <div class="mil-sidebar">
+            <ul class="mil-social mil-c-gone">
+                <li><a href="https://vk.com/id5133937" target="_blank">vk.</a></li>
+                <li><a href="https://github.com/alsibir" target="_blank">GitHub.</a></li>
+                <li><a href="https://gitlab.com/alsibir" target="_blank">GitLab.</a></li>
+            </ul>
+            <div>
+                <h2 class="mil-fs24 mil-mb60">AlSibir_PRO_docs</h2>
+                <ul class="mil-main-menu mil-onepage-menu mil-c-gone">
+                    <li>
+                        <a href="#home">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#services">Компетенции</a>
+                    </li>
+                    <li>
+                        <a href="#about">О себе</a>
+                    </li>
+                                        <li>
+                        <a href="#education">Образование</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Примеры работ</a>
+                    </li>
+                   <li>
+                        <a href="#skills">Навыки</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Опыт</a>
+                    </li>
+                    <li>
+					    <a href="#clients">Клиенты</a>
+					</li>
+
+                    <li>
+                        <a href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="mil-soft">©_AlSibir_PRO_docs.</p>
+        </div>
+        <!-- sidebar end -->
+
+        <!-- content -->
+        <div id="smooth-content" class="mil-content">
+
+            <div class="mil-content-frame" id="home">
+                
+<!-- banner -->
+<div class="mil-banner mil-container-out-right" style="margin-bottom: 150px;">
+  <div class="row mil-aic">
+    <div class="col-xl-6">
+      <div class="mil-banner-text">
+        <p class="mil-suptitle mil-fs17 mil-mb50" style="font-size: 175%; font-weight: bold;">
+          Технический писатель
+        </p>
+        <h1 class="mil-fs90 mil-upper mil-mb40">
+          <span class="mil-text-bg" style="font-size: 66%; color: gray;">Здравствуйте, я<br></span>                    
+          <span class="mil-text-bg"><span class="mil-accent">Александр<br></span>Сибиряков</span>
+        </h1>
+        <p class="mil-fs16 mil-shortened mil-soft mil-mb60" style="font-size: 170%;">
+          я верю, что сотрудничество и креативность лежат в основе успешного развития. 
+          В каждом проекте я предлагаю нестандартный взгляд и эффективные решения.
+        </p>
+        <div class="mil-c-gone">
+          <a href="#portfolio" class="mil-btn mil-btn-border" data-scroll-to>Примеры работ</a>
+                
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="mil-banner-image">
+        <img src="img/1.jpg" alt="portrait" class="mil-scale-img" data-value-1=".73" data-value-2="1.11">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- banner end -->
+
+
+
+
+				 <!-- services -->
+				<div class="mil-container mil-p-0-30" id="services">
+				    <div class="row">
+				        <div class="col-lg-8 mil-mb90">
+				            <h2 class="mil-fs24 mil-mb30 mil-up">Компетенции</h2>
+				            <p class="mil-fs18 mil-up">Создаю документацию по <span class="mil-accent">ГОСТ и ЕСКД</span> — от сбора требований до финального сопровождения. Чёткая структура, понятный язык, точное оформление — всё, как нужно заказчику.</p>
+				        </div>
+				        <div class="col-12">
+				            <div class="mil-service-item mil-mb60">
+				                <div class="mil-icon-part mil-mb30">
+				                    <img src="img/icons/1.svg" alt="icon" class="mil-up">
+				                    <h3 class="mil-fs20 mil-up">Анализ требований</h3>
+				                </div>
+				                <div class="mil-text-part">
+				                    <p class="mil-fs16 mil-soft mil-mb30 mil-up">Профессиональный анализ бизнес- и технических требований для подготовки качественной проектной документации.</p>
+				                    <ul class="mil-fs16">
+				                        <li class="mil-up">Формализация и сбор требований</li>
+				                        <li class="mil-up">Подготовка технических заданий (ТЗ)</li>
+				                        <li class="mil-up">Анализ нормативных документов и стандартов</li>
+				                    </ul>
+				                </div>
+				            </div>
+				            <div class="mil-divider mil-mb60 mil-up"></div>
+				            <div class="mil-service-item mil-mb60">
+				                <div class="mil-icon-part mil-mb30">
+				                    <img src="img/icons/2.svg" alt="icon" class="mil-up">
+				                    <h3 class="mil-fs20 mil-up">Разработка документации</h3>
+				                </div>
+				                <div class="mil-text-part">
+				                    <p class="mil-fs16 mil-soft mil-mb30 mil-up">Создание полного пакета технической документации в соответствии с ГОСТ 34, ГОСТ 19, ЕСКД и другими требованиями отраслевых стандартов.</p>
+				                    <ul class="mil-fs16">
+				                        <li class="mil-up">Технические задания (ТЗ)</li>
+				                        <li class="mil-up">Программы и методики испытаний (ПМИ)</li>
+				                        <li class="mil-up">Отчёты НИОКР и ОКР</li>
+				                        <li class="mil-up">Инструкции и руководства пользователя</li>
+				                    </ul>
+				                </div>
+				            </div>
+				            <div class="mil-divider mil-mb60 mil-up"></div>
+				            <div class="mil-service-item mil-mb60">
+				                <div class="mil-icon-part mil-mb30">
+				                    <img src="img/icons/3.svg" alt="icon" class="mil-up">
+				                    <h3 class="mil-fs20 mil-up">Аналитика и сопровождение</h3>
+				                </div>
+				                <div class="mil-text-part">
+				                    <p class="mil-fs16 mil-soft mil-mb30 mil-up">Проведение аналитических исследований, мониторинг информационных ресурсов, сопровождение процессов разработки ПО.</p>
+				                    <ul class="mil-fs16">
+				                        <li class="mil-up">Анализ бизнес-процессов</li>
+				                        <li class="mil-up">Проектная аналитика и консультирование</li>
+				                        <li class="mil-up">Рецензирование документации</li>
+				                        <li class="mil-up">Подготовка рекомендаций</li>
+				                    </ul>
+				                </div>
+				            </div>
+				            <div class="mil-divider mil-mb60 mil-up"></div>
+				            <div class="mil-service-item mil-mb60">
+				                <div class="mil-icon-part mil-mb30">
+				                    <img src="img/icons/4.svg" alt="icon" class="mil-up">
+				                    <h3 class="mil-fs20 mil-up">Техническое сопровождение</h3>
+				                </div>
+				                <div class="mil-text-part">
+				                    <p class="mil-fs16 mil-soft mil-mb30 mil-up">Организация процессов внутренней документации и сопровождение разработки программных и технических решений на всех этапах жизненного цикла.</p>
+				                    <ul class="mil-fs16">
+				                        <li class="mil-up">Консультирование команд разработчиков</li>
+				                        <li class="mil-up">Внедрение стандартов оформления</li>
+				                        <li class="mil-up">Поддержка системного тестирования</li>
+				                        <li class="mil-up">Участие в сертификационных работах</li>
+				                    </ul>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+				<!-- services end -->
+
+                <!-- about -->
+                <div class="mil-container" id="about">
+                    <div class="row">
+                        <div class="col-lg-8 col-xl-6 mil-mb90">
+                            <h2 class="mil-fs24 mil-mb30 mil-up">О себе</h2>
+                            <p class="mil-fs18 mil-up">Я  <span class="mil-accent">Технический писатель</span>. Люблю технологии, ценю ясность мысли и силу хорошо структурированного текста.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mil-container-out">
+                    <div class="mil-about-banner">
+                        <div class="mil-up" style="position: relative; z-index: 2">
+                            <div class="mil-sign">AlSibir</div>
+                        </div>
+                        <div class="mil-image-frame mil-up">
+                            <img src="img/2.png" alt="banner" class="mil-scale-img" data-value-1="1" data-value-2="1.25">
+                        </div>
+                    </div>
+                </div>
+                <div class="mil-container mil-p-90-90 mil-1200-p-30-90">
+                    <div class="row flex-sm-row-reverse">
+                        <div class="col-xl-6" style="position: relative;">
+                            <ul class="mil-contact-info mil-mb30 mil-up">
+                                <li>
+                                    <h6 class="mil-fs16 mil-mb10 mil-up">Роль:</h6>
+                                    <p class="mil-fs16 mil-soft mil-up">Технический писатель и аналитик</p>
+                                </li>
+                                <li>
+                                    <h6 class="mil-fs16 mil-mb10 mil-up">Email:</h6>
+                                    <p class="mil-fs16 mil-soft mil-up">wordmaster@textpro-1.ru</p>
+                                </li>
+                                <li>
+                                    <h6 class="mil-fs16 mil-mb10 mil-up">Телефон:</h6>
+                                    <p class="mil-fs16 mil-soft mil-up">+7 (936) 313-35-18</p>
+                                </li>
+                                <li>
+                                    <h6 class="mil-fs16 mil-mb10 
+                                    mil-up">Резюме:</h6>
+                                    <div class="mil-up mil-c-gone">
+                                    <a href="EX/CV__tekhnicheskij_pisatel'__IT_Sibiriakov.pdf" download class="mil-text-link mil-fs16">Скачать Резюме</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-6">
+                            <p class="mil-soft mil-fs16 mil-mb30 mil-up">Я — технический писатель с инженерным образованием и более чем восьмилетним опытом в IT и НИОКР. Помогаю превращать сложные технические решения в понятную, точную и структурированную документацию. Разрабатываю ТЗ, ПМИ, РЭ, инструкции, API-описания и отчёты по ГОСТ 34/19. Работаю с проектами в сферах искусственного интеллекта, SDK, B2B/B2G и госсекторе.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="mil-soft mil-fs16 mil-mb30 mil-up">В должности ведущего технического писателя-аналитика в «Наносемантике» я подготовил полный спектр документации по ГОСТ 34, ЕСПД и ЕСКД, включая сертификационные и пользовательские материалы. Разработал подход, обеспечивший приёмку в 87% случаев с первой попытки. Увеличил объём охваченных функций и ускорил выпуск документов в 1,7 раза. Обеспечивал аналитическую поддержку НИОКР, документировал SDK и решения для МГУ и МФТИ. Был отмечен наградами за вклад в производительность.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="mil-soft mil-fs16 mil-mb30 mil-up">Обладаю экспертизой в области ГОСТ-документации, API, аналитики требований, архитектуры ПО, визуализации интерфейсов и проектного управления. Владею UML, BPMN, IDEF3, работаю в Agile и Scrum. Использую MS Office, Confluence, LaTeX, Markdown, PlantUML, Draw.io, Figma, Photoshop, Git, Jira и другие инструменты. Работаю автономно: самостоятельно настраиваю среду, оборудование и ПО, не требуя поддержки IT-служб. Это позволяет эффективно встраиваться в любые процессы.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="mil-soft mil-fs16 mil-up">Разрабатывал документацию для ГИС ТОР КНД, SOVA, DialogOS, Nlab Speech, PuzzleLib, беспилотников и антропоморфных роботов МФТИ, стенда «Снежинка», нейросети «Жириновский» и других проектов. Вся документация успешно проходила нормоконтроль. В «Панораме» внедрял ГОСТ-документы, интегрировал Jira и Confluence. Имею сертификаты Cisco, Infowatch, PMP. Свободно владею английским (B2), немного — французским. По запросу предоставляю рекомендации и примеры работ.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- about end -->
+
+				<!-- education -->
+				<div class="mil-container" id="education">
+				  <div class="row">
+				    <div class="col-lg-8 mil-mb90">
+				      <h2 class="mil-fs24 mil-mb30 mil-up">Образование</h2>
+				      <p class="mil-fs18 mil-up">
+				        Окончил <span class="mil-accent">Московский радиоаппаратостроительный техникум</span> по специальности «Радиоаппаратостроение» и 
+				        <span class="mil-accent">Военно-космическую академию</span> имени А.Ф. Можайского (Санкт-Петербург), получил высшееобразование по техническому профилю.
+				        Прошёл дополнительное обучение в <span class="mil-accent">CISCO Network Academy</span> по программе IT-Essentials и получил сертификацию 
+				        по информационной безопасности от <span class="mil-accent">Infowatch</span>.
+				      </p>
+				    </div>
+				  </div>
+				</div>
+				<!-- education end -->
+
+				<!-- portfolio -->
+				<div class="mil-container" id="portfolio">
+				  <div class="row">
+				    <div class="col-lg-8 mil-mb30">
+				      <h2 class="mil-fs24 mil-mb30 mil-up">Примеры работ</h2>
+				      <p class="mil-fs18 mil-up">Все примеры работ можно 
+					  <a href="EX/EX.zip" download class="mil-accent" style="text-decoration: underline;">
+					    скачать одним архивом (9,7 MB)
+					  </a> 
+					  или открыть по отдельным ссылкам ниже (каждая ссылка откроется в новой вкладке для удобства просмотра).
+					</p>
+
+				    </div>
+				  </div>
+					  <div id="pdf-list" class="mil-mb90">
+						<ul class="mil-fs18 mil-up" style="list-style: none; padding-left: 0;">
+						
+						  <li>
+						    <span style="color: red; font-weight: bold; margin-right: 8px;">
+						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
+						    </span>
+						    <a href="EX/PRIMER_Marker_poiasnitelnaia_zapiska_k_tekhnicheskomu_proektu.pdf" target="_blank" rel="noopener">
+						      Пояснительная записка к техническому проекту (Маркер)
+						    </a>
+						  </li>
+						
+						  <li>
+						    <span style="color: red; font-weight: bold; margin-right: 8px;">
+						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
+						    </span>
+						    <a href="EX/PRIMER_tekhnicheskogo_zadaniya.pdf" target="_blank" rel="noopener">
+						      ТЗ: доработка ORFO AI
+						    </a>
+						  </li>
+						
+						  <li>
+						    <span style="color: red; font-weight: bold; margin-right: 8px;">
+						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
+						    </span>
+						    <a href="EX/PRIMER__Opisanie%20API.pdf" target="_blank" rel="noopener">
+						      Описание API (Service API)
+						    </a>
+						  </li>
+						
+						  <li>
+						    <span style="color: red; font-weight: bold; margin-right: 8px;">
+						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
+						    </span>
+						    <a href="EX/PRIMER_PuzzleLib-M-tekhnicheskoe_zadanie.pdf" target="_blank" rel="noopener">
+						      ТЗ: модификация PuzzleLib
+						    </a>
+						  </li>
+						
+						  <li>
+						    <span style="color: red; font-weight: bold; margin-right: 8px;">
+						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
+						    </span>
+						    <a href="EX/PRIMER_SNEZHINKA_tekhnicheskoe_zadanie.pdf" target="_blank" rel="noopener">
+						      ТЗ: Виртуальный ассистент «Снежинка»
+						    </a>
+						  </li>
+						
+						  <li>
+						    <span style="color: red; font-weight: bold; margin-right: 8px;">
+						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
+						    </span>
+						    <a href="EX/PRIMER_DialogOS-rukovodstvo_operatora.pdf" target="_blank" rel="noopener">
+						      Руководство оператора DialogOS
+						    </a>
+						  </li>
+						
+						  <li>
+						    <span style="color: red; font-weight: bold; margin-right: 8px;">
+						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
+						    </span>
+						    <a href="EX/PRIMER_rukovodstvo_pol'zovatelya_zhirinovskij.pdf" target="_blank" rel="noopener">
+						      Руководство: ИИ Жириновский
+						    </a>
+						  </li>
+						
+						  <li>
+						    <span style="color: red; font-weight: bold; margin-right: 8px;">
+						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
+						    </span>
+						    <a href="EX/PRIMER_vedomost'_tekhnicheskogo_proekta+.pdf" target="_blank" rel="noopener">
+						      Ведомость технического проекта
+						    </a>
+						  </li>
+						
+						</ul>
+					</div>
+				</div>
+				<!-- portfolio end -->
+ 
+                <!-- skills -->
+                <div class="mil-container mil-p-0-90" id="skills">
+                    <div class="row">
+                        <div class="col-xl-8 mil-mb90">
+                            <h2 class="mil-fs24 mil-mb30 mil-up">Навыки</h2>
+                            <p class="mil-fs18 mil-up">Комбинируя <span class="mil-accent">навыки работы с технологиями и аналитический подход</span>, я специализируюсь на создании технической документации и сопровождении проектов в соответствии с отраслевыми стандартами.</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Знание требований ГОСТ и ЕСКД</p>
+                            <div class="mil-prog-track mil-mb60 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="75"></div>
+                            </div>
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Анализ требований и исходных данных</p>
+                            <div class="mil-prog-track mil-mb60 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="95"></div>
+                            </div>
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Структурирование информации</p>
+                            <div class="mil-prog-track mil-mb60 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="90"></div>
+                            </div>
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Разработка технических документов</p>
+                            <div class="mil-prog-track mil-mb90 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="99"></div>
+                            </div>
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Работа с графическими материалами</p>
+                            <div class="mil-prog-track mil-mb90 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="75"></div>
+                            </div>
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Корректность языка и стиля</p>
+                            <div class="mil-prog-track mil-mb90 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="90"></div>
+                            </div>
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Понимание жизненного цикла разработки</p>
+                            <div class="mil-prog-track mil-mb90 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="95"></div>
+                            </div>
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Владение инструментами документирования</p>
+                            <div class="mil-prog-track mil-mb90 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="90"></div>
+                            </div>
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Работа с нормативно-правовыми актами</p>
+                            <div class="mil-prog-track mil-mb90 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="75"></div>
+                            </div>
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Взаимодействие с экспертами и разработчиками</p>
+                            <div class="mil-prog-track mil-mb90 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="80"></div>
+                            </div>                            
+                            <p class="mil-suptitle mil-fs14 mil-mb10 mil-up">Generative AI</p>
+                            <div class="mil-prog-track mil-mb60 mil-add-class mil-up">
+                                <div class="mil-prog" data-number="65"></div>
+                            </div>
+                            <p class="mil-soft mil-fs16 mil-up">При разработке документации я в первую очередь выстраиваю чёткую структуру: определяю целевую аудиторию, логически делю материал на разделы, настраиваю навигацию и перекрёстные ссылки. Только после этого приступаю к наполнению, используя профессиональную терминологию, списки, таблицы и пояснения. Такой подход позволяет создавать удобные и соответствующие требованиям документы.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- skills end -->
+                
+                <!-- experience -->
+				<div class="mil-container mil-p-0-30" id="experience">	
+				    <div class="row">
+				        <div class="col-xl-8 mil-mb60">
+				            <h2 class="mil-fs24 mil-up">Опыт</h2>
+				        </div>
+				        <div class="col-md-6">
+				            <div class="mil-exp-item mil-mb60">
+				                <div class="mil-date mil-up">
+				                    <span class="mil-soft">2024</span> - <span class="mil-accent">Present</span>
+				                </div>
+				                <div>
+				                    <h6 class="mil-fs16 mil-mb10 mil-up">Ведущий технический писатель-аналитик</h6>
+				                    <p class="mil-fs16 mil-soft mil-up">( ООО "Лаборатория Наносемантика" )</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="col-md-6">
+				            <div class="mil-exp-item mil-mb60">
+				                <div class="mil-date mil-up">
+				                    <span class="mil-soft">2020</span> - <span class="mil-accent">2024</span>
+				                </div>
+				                <div>
+				                    <h6 class="mil-fs16 mil-mb10 mil-up">Аналитик / Технический писатель</h6>
+				                    <p class="mil-fs16 mil-soft mil-up">( ООО "Виртуальные ассистенты" )</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="col-md-6">
+				            <div class="mil-exp-item mil-mb60">
+				                <div class="mil-date mil-up">
+				                    <span class="mil-soft">2021</span> - <span class="mil-accent">2023</span>
+				                </div>
+				                <div>
+				                    <h6 class="mil-fs16 mil-mb10 mil-up">Технический писатель</h6>
+				                    <p class="mil-fs16 mil-soft mil-up">( ООО "Нейросети Ашманова")</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="col-md-6">
+				            <div class="mil-exp-item mil-mb60">
+				                <div class="mil-date mil-up">
+				                    <span class="mil-soft">2020</span> - <span class="mil-accent">2021</span>
+				                </div>
+				                <div>
+				                    <h6 class="mil-fs16 mil-mb10 mil-up">Научный сотрудник</h6>
+				                    <p class="mil-fs16 mil-soft mil-up">( МГУ имени М.В. Ломоносова, Центр хранения и анализа больших данных)</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="col-md-6">
+				            <div class="mil-exp-item mil-mb60">
+				                <div class="mil-date mil-up">
+				                    <span class="mil-soft">2021</span> - <span class="mil-accent">2021</span>
+				                </div>
+				                <div>
+				                    <h6 class="mil-fs16 mil-mb10 mil-up">Ведущий специалист</h6>
+				                    <p class="mil-fs16 mil-soft mil-up">( Факультет ВМК МГУ имени М.В. Ломоносова, Группа НИР)</p>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="col-md-6">
+				            <div class="mil-exp-item mil-mb60">
+				                <div class="mil-date mil-up">
+				                    <span class="mil-soft">2023</span> - <span class="mil-accent">2024</span>
+				                </div>
+				                <div>
+				                    <h6 class="mil-fs16 mil-mb10 mil-up">Техник</h6>
+				                    <p class="mil-fs16 mil-soft mil-up">( МФТИ, Лаборатория нейросетевых технологий и компьютерной лингвистики)</p>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+				<!-- experience end -->
+				
+				<!-- clients -->
+				<div class="mil-container" id="clients">
+				  <div class="row">
+				    <div class="col-lg-8 col-xl-6 mil-mb90">
+				      <h2 class="mil-fs24 mil-mb30 mil-up">Клиенты</h2>
+				      <p class="mil-fs18 mil-up">Мне посчастливилось работать для <span class="mil-accent">выдающихися заказчиков</span>, мои документы прошли их проверки:</p>
+				    </div>
+				  </div>
+				</div>
+				
+				<div class="mil-container-out mil-mb90">
+				  <div class="mil-about-banner">
+				    <div class="mil-up" style="position: relative; z-index: 2">
+				      <div class="mil-sign">AlSibir</div>
+				    </div>
+				    <div class="mil-image-frame mil-up">
+				      <img src="img/4.png" alt="clients-banner" class="mil-scale-img" data-value-1="1" data-value-2="1.25">
+				    </div>
+				  </div>
+				</div>
+				<!-- clients end -->
+
+				
+				
+                <!-- contact -->
+                <div class="mil-container" id="contact">
+                    <div class="row">
+                        <div class="col-xl-8 mil-mb60">
+                            <h2 class="mil-fs24 mil-mb30 mil-up">Контакты</h2>
+                            <p class="mil-fs18 mil-up">Сотрудничество и <span class="mil-accent">свежий взгляд на задачи</span> — основа моего подхода к реализации проектов.</p>
+                        </div>
+                    </div>
+                    <div class="mil-divider mil-mb60 mil-up"></div>
+                    <div class="row mil-mb30">
+                        <div class="col-md-4 mil-mb60">
+                            <h6 class="mil-fs16 mil-mb10 mil-up">Email</h6>
+                            <p class="mil-fs16 mil-soft mil-up">wordmaster@textpro-1.ru</p>
+                        </div>
+                        <div class="col-md-4 mil-mb60">
+                            <h6 class="mil-fs16 mil-mb10 mil-up">Адрес</h6>
+                            <p class="mil-fs16 mil-soft mil-up">Москва, 125310, РОССИЯ</p>
+                        </div>
+                        <div class="col-md-4 mil-mb60">
+                            <h6 class="mil-fs16 mil-mb10 mil-up">Телефон</h6>
+                            <p class="mil-fs16 mil-soft mil-up">+7 (936) 313-35-18</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mil-container-out">
+                    <div class="mil-about-banner">
+                        <div class="mil-image-frame mil-up">
+                            <img src="img/3.jpg" alt="banner" class="mil-scale-img" data-value-1="1" data-value-2="1.25">
+                        </div>
+                    </div>
+                </div>
+                <div class="mil-container mil-p-90-90">
+					           
+	                <form action="https://formspree.io/f/mgvkvqkd" method="POST">
+					    <div class="row">
+					        <div class="col-md-6 mil-mb60">
+					            <input type="text" name="name" placeholder="Укажите Ваше имя" required>
+					        </div>
+					        <div class="col-md-6 mil-mb60">
+					            <input type="email" name="email" placeholder="Укажите Ваш email" required>
+					        </div>
+					        <div class="col-lg-12 mil-mb60">
+					            <textarea name="message" rows="10" placeholder="Оставьте сообщение автору сайта" required></textarea>
+					        </div>
+					        <div class="mil-jcb mil-aic">
+					            <p class="mil-fs14 mil-soft" style="padding-right: 15px;">* Обещаю не передавать вашу личную информацию третьим лицам.</p>
+					            <div class="mil-c-gone"><button type="submit" class="mil-btn">Отправить</button></div>
+					        </div>
+					    </div>
+					</form>   
+                    
+                </div>
+                <!-- contact end -->
+
+            </div>
+
+        </div>
+        <!-- content -->
+
+    </div>
+    <!-- wrapper end -->
+
+    <!-- gsap js -->
+    <script src="js/plugins/gsap.min.js"></script>
+    <!-- scroll smoother -->
+    <script src="js/plugins/ScrollSmoother.min.js"></script>
+    <!-- scroll trigger js -->
+    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <!-- scroll to js -->
+    <script src="js/plugins/ScrollTo.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- okai js -->
+    <script src="js/main.js"></script>
+
+
+
+
+<script>
+  function openPDF(path) {
+    document.body.classList.add("modal-open");
+    const modal = document.getElementById('pdfModal');
+    const frame = document.getElementById('pdfFrame');
+    frame.src = path + '#pagemode=thumbs';
+    modal.classList.add('show');
+  }
+
+  function closePDF() {
+    const modal = document.getElementById("pdfModal");
+    const frame = document.getElementById("pdfFrame");
+    modal.classList.remove("show");
+    frame.src = "";
+    document.body.classList.remove("modal-open");
+  }
+</script>
+
+<script>
+  document.querySelectorAll('[data-scroll-to]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
+      if (target) {
+        gsap.to(window, {
+          duration: 1,
+          scrollTo: { y: target, offsetY: 150 } // можно настроить точность
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+
+</html>
