@@ -1,38 +1,43 @@
 .mil-sidebar { z-index: auto; }
 <!DOCTYPE html>
 <html lang="ru-RU">
-
 <head>
-    <title>AlSibir – Персональное портфолио и резюме</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="author" content="bslthemes" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="author" content="Александр Сибиряков">
+  <meta name="description" content="Документация, ТЗ, API, ГОСТ — примеры работ технического писателя Александра Сибирякова. Портфолио, резюме, проекты.">
 
-    <!-- grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
-    <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
-    <!-- okai css -->
-    <link rel="stylesheet" href="css/style-light.css">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>AlSibir – Персональное портфолио и резюме</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AlSibir – Персональное портфолио и резюме">
+  <meta property="og:description" content="Документация, ТЗ, API, ГОСТ — примеры работ Александра Сибирякова">
+  <meta property="og:image" content="https://alsibir.github.io/wordmaster/img/preview.jpg">
+  <meta property="og:url" content="https://alsibir.github.io/wordmaster/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AlSibir – Портфолио технического писателя">
+  <meta name="twitter:description" content="Примеры ТЗ, документации и аналитики по ГОСТ">
+  <meta name="twitter:image" content="https://alsibir.github.io/wordmaster/img/preview.jpg">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <link rel="stylesheet" href="css/style-light.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Прелоад для ускорения -->
+  <link rel="preload" href="css/style-light.css" as="style">
+  <link rel="preload" href="img/preview.jpg" as="image" type="image/jpeg">
+
     
-        <!-- Open Graph для соцсетей -->
-	<meta property="og:title" content="AlSibir – Примеры работ и портфолио">
-	<meta property="og:description" content="Документация, ТЗ, API, ГОСТ — примеры работ Александра Сибирякова">
-	<meta property="og:image" content="https://alsibir.github.io/wordmaster/img/preview.jpg">
-	<meta property="og:url" content="https://alsibir.github.io/wordmaster/">
-	<meta property="og:type" content="website">
-
-	<!-- Twitter Cards -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="AlSibir – Портфолио технического писателя">
-	<meta name="twitter:description" content="Примеры ТЗ, документации и аналитики по ГОСТ">
-	<meta name="twitter:image" content="https://alsibir.github.io/wordmaster/img/preview.jpg">
-
 
 <style>
   .pdf-modal {
@@ -96,8 +101,9 @@
 body.modal-open .mil-sidebar { display: none !important; }
 </style>
 
-
-<script src="https://cdn.counter.dev/script.js" data-id="8308e23b-f04e-4373-97f3-31b0da94742c" data-utcoffset="3"></script>
+ <!-- counter -->
+	<script src="https://cdn.counter.dev/script.js" data-id="8308e23b-f04e-4373-97f3-31b0da94742c" data-utcoffset="3"></script>
+	
 </head>
 
 <body>
@@ -182,41 +188,38 @@ body.modal-open .mil-sidebar { display: none !important; }
 
             <div class="mil-content-frame" id="home">
                 
-<!-- banner -->
-<div class="mil-banner mil-container-out-right" style="margin-bottom: 150px;">
-  <div class="row mil-aic">
-    <div class="col-xl-6">
-      <div class="mil-banner-text">
-        <p class="mil-suptitle mil-fs17 mil-mb50" style="font-size: 175%; font-weight: bold;">
-          Технический писатель
-        </p>
-        <h1 class="mil-fs90 mil-upper mil-mb40">
-          <span class="mil-text-bg" style="font-size: 66%; color: gray;">Здравствуйте, я<br></span>                    
-          <span class="mil-text-bg"><span class="mil-accent">Александр<br></span>Сибиряков</span>
-        </h1>
-        <p class="mil-fs16 mil-shortened mil-soft mil-mb60" style="font-size: 170%;">
-          я верю, что сотрудничество и креативность лежат в основе успешного развития. 
-          В каждом проекте я предлагаю нестандартный взгляд и эффективные решения.
-        </p>
-        <div class="mil-c-gone">
-          <a href="#worksamples" class="mil-btn mil-btn-border" data-scroll-to>Примеры работ</a>
-                
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-6">
-      <div class="mil-banner-image">
-        <img src="img/1.jpg" alt="portrait" class="mil-scale-img" data-value-1=".73" data-value-2="1.11">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- banner end -->
+				<!-- banner -->
+				<div class="mil-banner mil-container-out-right" style="margin-bottom: 150px;">
+				  <div class="row mil-aic">
+				    <div class="col-xl-6">
+				      <div class="mil-banner-text">
+				        <p class="mil-suptitle mil-fs17 mil-mb50" style="font-size: 175%; font-weight: bold;">
+				          Технический писатель
+				        </p>
+				        <h1 class="mil-fs90 mil-upper mil-mb40">
+				          <span class="mil-text-bg" style="font-size: 66%; color: gray;">Здравствуйте, я<br></span>                    
+				          <span class="mil-text-bg"><span class="mil-accent">Александр<br></span>Сибиряков</span>
+				        </h1>
+				        <p class="mil-fs16 mil-shortened mil-soft mil-mb60" style="font-size: 170%;">
+				          я верю, что сотрудничество и креативность лежат в основе успешного развития. 
+				          В каждом проекте я предлагаю нестандартный взгляд и эффективные решения.
+				        </p>
+				        <div class="mil-c-gone">
+				          <a href="#worksamples" class="mil-btn mil-btn-border" data-scroll-to>Примеры работ</a>
+				                
+				        </div>
+				      </div>
+				    </div>
+				    <div class="col-xl-6">
+				      <div class="mil-banner-image">
+				        <img src="img/1.jpg" alt="portrait" class="mil-scale-img" data-value-1=".73" data-value-2="1.11">
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- banner end -->
 
-
-
-
-				 <!-- services -->
+				<!-- services -->
 				<div class="mil-container mil-p-0-30" id="services">
 				    <div class="row">
 				        <div class="col-lg-8 mil-mb90">
@@ -387,14 +390,7 @@ body.modal-open .mil-sidebar { display: none !important; }
 					  <div id="pdf-list" class="mil-mb90">
 						<ul class="mil-fs18 mil-up" style="list-style: none; padding-left: 0;">
 						
-						  <li>
-						    <span style="color: red; font-weight: bold; margin-right: 8px;">
-						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
-						    </span>
-						    <a href="EX/PRIMER_Marker_poiasnitelnaia_zapiska_k_tekhnicheskomu_proektu.pdf" target="_blank" rel="noopener">
-						      Пояснительная записка к техническому проекту (Маркер)
-						    </a>
-						  </li>
+
 						
 						  <li>
 						    <span style="color: red; font-weight: bold; margin-right: 8px;">
@@ -432,14 +428,7 @@ body.modal-open .mil-sidebar { display: none !important; }
 						    </a>
 						  </li>
 						
-						  <li>
-						    <span style="color: red; font-weight: bold; margin-right: 8px;">
-						      <i class="fa-light fa-file-pdf fa-2xs" style="color: #ff0000;"></i> [PDF]
-						    </span>
-						    <a href="EX/PRIMER_DialogOS-rukovodstvo_operatora.pdf" target="_blank" rel="noopener">
-						      Руководство оператора DialogOS
-						    </a>
-						  </li>
+
 						
 						  <li>
 						    <span style="color: red; font-weight: bold; margin-right: 8px;">
@@ -469,7 +458,7 @@ body.modal-open .mil-sidebar { display: none !important; }
 				  <div class="row">
 				    <div class="col-xl-8 mil-mb60">
 				      <h2 class="mil-fs24 mil-up">Проекты, для которых я разрабатывал документацию</h2>
-				      <p class="mil-fs18 mil-up">Все документы успешно проходили нормоконтроль со стороны заказчиков.</p>
+				      <p class="mil-fs18 mil-up">Все документы успешно проходили нормоконтроль со стороны заказчиков. Ссылки откроются в новом окне</p>
 				    </div>
 				
 					 <div class="col-12 mil-mb90">
@@ -497,29 +486,6 @@ body.modal-open .mil-sidebar { display: none !important; }
 				</div>
 				<!-- projects end -->
 
- <div class="col-12 mil-mb90">
-  <ul class="mil-fs16 mil-up" style="line-height: 1.7;">
-    <li><a href="http://static.government.ru/media/files/YhdHmPI6lW6fmdqjF1DjVqlIalGODcuJ.pdf" target="_blank" rel="noopener">ГИС ТОР КНД</a></li>
-    <li>
-      <a href="https://sova.ai/ru/" target="_blank" rel="noopener">SOVA</a> – 
-      <a href="https://habr.com/ru/companies/ashmanov_net/articles/523412/" target="_blank" rel="noopener">обзор на Habr</a>
-    </li>
-    <li><a href="https://nanosemantics.ai/dialog-os" target="_blank" rel="noopener">DialogOS</a></li>
-    <li><a href="https://nanosemantics.ai/conversational-ai-development" target="_blank" rel="noopener">Разговорный ИИ</a></li>
-    <li><a href="https://nanosemantics.ai/tts" target="_blank" rel="noopener">Nlab Speech TTS</a></li>
-    <li><a href="https://nanosemantics.ai/asr" target="_blank" rel="noopener">Nlab Speech ASR</a></li>
-    <li><a href="https://nanosemantics.ai/marker" target="_blank" rel="noopener">Nlab Marker</a></li>
-    <li><a href="https://habr.com/ru/companies/ashmanov_net/articles/469033/" target="_blank" rel="noopener">PuzzleLib</a></li>
-    <li><a href="https://rutube.ru/video/40200be1a9ab5c1c998baa283034f827" target="_blank" rel="noopener">Беспилотный автомобиль (МФТИ)</a></li>
-    <li><a href="https://www.kommersant.ru/doc/7400900" target="_blank" rel="noopener">Антропоморфный робот «Квант» (МФТИ)</a></li>
-    <li><a href="https://syntelly.ru" target="_blank" rel="noopener">Синтелли</a></li>
-    <li><a href="https://nanosemantics.ai/customers/20" target="_blank" rel="noopener">Стенд «Снежинка»</a></li>
-    <li><a href="https://habr.com/ru/articles/743394/" target="_blank" rel="noopener">Нейросеть «Жириновский»</a></li>
-    <li>и другие.</li>
-  </ul>
-</div>
-
- 
  
                 <!-- skills -->
                 <div class="mil-container mil-p-0-90" id="skills">
