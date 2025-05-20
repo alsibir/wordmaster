@@ -16,13 +16,25 @@ yarn-error.log*
 .vscode/
 .idea/
 
-# Сборка и артефакты (если используете генераторы)
+# Сборка и артефакты (если используете генераторы) - node/npm (если будет использоваться)
+node_modules/
 dist/
 build/
 
 # Кэш браузера / окружения
 .cache/
 *.bak
+
+# Бэкапы и временные файлы
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# ОС
+ehthumbs.db
+Desktop.ini
 
 # OS Linux / Mac / Windows временные файлы
 *~
@@ -32,3 +44,12 @@ build/
 # GitHub Pages (если вы генерируете статику в отдельную папку)
 public/
 out/
+
+
+
+
+
+
+
+
+
