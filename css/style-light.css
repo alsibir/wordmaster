@@ -1809,3 +1809,7 @@ experience
     margin-bottom: 20px;
   }
 }
+
+.mil-cursor-follower {
+  display: none !important;
+}
